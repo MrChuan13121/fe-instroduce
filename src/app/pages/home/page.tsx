@@ -15,7 +15,7 @@ export default function HomePage() {
           Welcome to <span>Văn Chuẩn</span>
         </h1>
         <div className={styles.buttonContainer}>
-          <Link id="link"  href="pages/introduce/introduce">Go to About Page</Link>
+          <Link id="link"  href="/pages/introduce">Go to About Page</Link>
         </div>
       </main>
     </div>

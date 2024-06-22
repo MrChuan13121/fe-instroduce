@@ -1,18 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState } from 'react'; 
 import styles from '../introduce/introduce.page.module.css';
 
 export default function IntroduceScreen() {
-  const [count, setCount] = useState(0); 
-
-  const handleIncrement = () => {
-    setCount(prevCount => prevCount + 1); 
-  };
-
-  const handleReset = () => {
-    setCount(0); 
-  };
 
   return (
     <div className={styles.container}>
@@ -22,7 +12,7 @@ export default function IntroduceScreen() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <div className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <span>Next.js!</span>
         </h1>
@@ -30,15 +20,6 @@ export default function IntroduceScreen() {
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.js</code>
         </p>
-
-        <div className={styles.grid}>
-          <Link href="/about">
-            <a className={styles.card}>
-              <h2>About &rarr;</h2>
-              <p>Find more about Next.js</p>
-            </a>
-          </Link>
-        </div>
 
         <div className={styles.imageContainer}>
           <img src="/image1.jpg" alt="Image 1" className={styles.image} />
@@ -51,16 +32,8 @@ export default function IntroduceScreen() {
           dictumst.
         </p>
 
-        <div className={styles.buttonContainer}>
-          <button className={styles.button} onClick={handleIncrement}>
-            Increment
-          </button>
-          <button className={styles.button} onClick={handleReset}>
-            Reset
-          </button>
-          <p>Count: {count}</p>
-        </div>
-      </main>
+      
+      </div>
 
       <footer className={styles.footer}>
         <a
