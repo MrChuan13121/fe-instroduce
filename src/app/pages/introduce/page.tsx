@@ -2,6 +2,7 @@ import styles from "../introduce/introduce.page.module.css";
 import Wave from "@/components/wave/page";
 import { Facebook, YouTube, Instagram } from "@mui/icons-material";
 import ExpandableSlider from "@/components/expandable-slider/page";
+import Feedback from "@/components/feedback/page";
 
 export default function IntroduceScreen() {
   return (
@@ -76,7 +77,7 @@ export default function IntroduceScreen() {
       </div>
       <div className={styles.static}>
         <div className={styles.subContent}>
-           
+           <Feedback></Feedback>
         </div>
       </div>
       <div className={styles.parallax}>
